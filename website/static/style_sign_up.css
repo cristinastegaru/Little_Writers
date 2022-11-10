@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Arizonia');
+
+body  
+{  
+    margin: 0;  
+    padding: 0;  
+    background-image: url("clouds.png");
+    background-size: cover;
+    background-color:#f7c9fbba;  
+    font-family: 'Arial';  
+}  
+.signup{  
+    width: 382px;  
+    overflow: hidden;  
+    margin: auto;  
+    margin: 20 0 0 450px;  
+    padding: 80px;  
+    /* background: #f6caef;    */
+    border-radius: 15px ; 
+    opacity: 0.6; 
+          
+}  
+h2{  
+    text-align: center;  
+    color: #000000;  
+    padding: 20px;  
+    font-family: 'Arizonia';font-size: 30px;
+}  
+label{  
+    color: #000000;  
+    font-size: 17px;  
+    opacity: 1; 
+}  
+
+#Name{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+}
+
+#Email{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+}
+
+#Uname{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+}  
+#Pass{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+
+}
+
+#Pass2{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px; 
+      
+}  
+
+#sign{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 17px;  
+    padding-left: 7px;  
+    color: rgb(0, 0, 0);  
+}  
+span{  
+    color: white;  
+    font-size: 17px;  
+}  
+a{  
+    float: right;  
+    background-color: #fbd0f4;  
+} 

@@ -1,0 +1,69 @@
+<!DOCTYPE html>    
+<html>    
+<head>    
+    <title>Projects</title>    
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style_addproject.css') }}">    
+</head>    
+<body>
+<div class="topnav">
+    <a class="active" href="/">Projects</a>
+    <a href="/notes">Notes</a>
+    <a href="/sprint">Sprint</a>
+  </div>  
+
+  <div class="row">
+    <div class="column1">
+  <div class="project"> 
+    <form id="project" method="POST">    
+        <h2>Add a new project!</h2><br> 
+        <label for="Title"><b>Title      </b> </label>    <br>
+        <input type="text" name="Title" id="Title" placeholder="Enter your project's title">    
+        <br><br>
+
+        <label for="Genre"><b>Genre   </b> </label>    <br>   
+        <input type="text" name="Genre" id="Genre" placeholder="Enter your project's genre">    
+        <br><br>
+
+        <label for="Type">Your project is:</label> <br>
+        <select name="type" id="type">
+          <option value="Book">Book</option>
+          <option value="ShortStory">Short Story</option>
+          <option value="Poetry">Poetry</option>
+          <option value="Drama">Drama</option>
+          <option value="Essay">Essay</option>
+        </select>   
+        <br> <br> 
+        <label for="Description"><b>Description   </b> </label>    
+        <textarea placeholder="Write a short summary!" name="Description" id="Description"></textarea>
+        <br><br>
+        <button type="submit" name="addproject" id="addproject">Add project</button>       
+        <br>
+        <br>
+        
+        
+    </form>     
+    </div>
+</div>    
+<div class="column2"> <ul>
+  {% for projects in user.projects %}
+  <div class="add_proj">
+  <li style="word-break: break-all; width: fit-content; block-size: fit-content;">
+     <p>Title: {{ projects.project_name }}</p>
+     <p>Genre:  {{ projects.genre }}</p>
+     <p>Project Type: {{ projects.project_type }}</p>
+     <p>Description: {{ projects.description }}</p>
+    
+    <button type="button" class="close" onClick="deleteProject({{ projects.id }})">
+      <span aria-hidden="true">&times;</span> </button>
+    </div>
+    <br> <br>
+  </li>
+  {% endfor %}
+</ul></div></div>
+
+<script
+      type="text/javascript"
+      src="{{ url_for('static', filename='index2.js') }}"
+    ></script>
+</body>    
+</html> 

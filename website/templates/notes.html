@@ -1,0 +1,67 @@
+<!DOCTYPE html>    
+<html>    
+<head>    
+    <title>Notes</title>    
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style_projects.css') }}">    
+</head>    
+<style>
+    textarea {
+      resize: none;
+      width: 500px;
+      height: 300px;
+      opacity: 0.5; 
+      background-image: url("static/textare.png");
+    }
+    </style>
+<body>
+<div class="topnav">
+    <a href="/">Projects</a>
+    <a class="active" href="/notes">Notes</a>
+    <a href="/sprint">Sprint</a>
+  </div>  
+
+
+
+
+
+<div class="row">
+<div class="column1">
+  <br><br><br> <h2>Add a new note!</h2><br> <br>
+<form method="POST">
+<div align="center">
+  <textarea placeholder="Write your ideas so you won't lose them!" cols="30" rows="5" name="note" id="note"></textarea>
+</div>
+
+
+  <br />
+ 
+ <div align="center">
+    <button type="submit">Add Note</button>
+ </div>
+</form>
+</div>
+
+  <div class="column2">
+  <ul>
+    {% for note in user.notes %}
+    <div class="cloud">
+    <li style="word-break: break-all; width: fit-content; block-size: fit-content;">
+      {{ note.content }}
+      <button type="button" class="close" onClick="deleteNote({{ note.id }})">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+      <br> <br>
+    </li>
+    {% endfor %}
+  </ul>
+  </div></div>
+
+
+<script
+      type="text/javascript"
+      src="{{ url_for('static', filename='index.js') }}"
+    ></script>
+
+</body>    
+</html> 

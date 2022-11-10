@@ -1,0 +1,44 @@
+<!DOCTYPE html>    
+<html>    
+<head>    
+    <title>Sprint</title>    
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style_sprint.css') }}">  
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>  
+</head>    
+<body>
+<div class="topnav">
+    <a href="/">Projects</a>
+    <a href="/notes">Notes</a>
+    <a class="active" href="/sprint">Sprint</a>
+  </div>   
+
+  <div class="row">
+    <div class="column1"><br><br>    <br><br>    
+  <div class="sprint">    
+    <form id="sprint" method="POST">    
+        <label for="Hours"><b>Ore</b></label><br>  
+        <input type="text" name="Hours" id="Hours" placeholder="Numar de ore">    
+        <br><br>    
+
+        <label for="Minutes"><b>Minute</b></label> <br>     
+        <input type="text" name="Minutes" id="Minutes" placeholder="Numar de minute">    
+        <br><br>    
+        
+
+        <button type="submit" name="sprintb" id="sprintb">Incepe</button>
+        <br><br>           
+
+
+    </form>  
+    </div></div>
+    <div class="column2">
+    <br> <br><br> <br>
+    <p style="font-family: 'Orbitron', sans-serif; font-size: 70px"> {{ value }} </p>
+    <img src="static/writing.gif">
+     <meta http-equiv="refresh" content="60" />
+    </div>
+  </div>    
+
+
+</body>    
+</html> 

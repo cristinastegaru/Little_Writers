@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Arizonia');
+
+
+.topnav {
+    background-color: rgb(246, 197, 218);
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: rgb(233, 226, 149);
+    color: #ffffff;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: rgb(251, 166, 203);
+    color: #ffffff;
+  }
+
+
+body  
+{  
+    margin: 0;  
+    padding: 0;  
+    background-image: url("clouds2.png");
+    background-size: cover;
+    background-color:#f7c9fbba;  
+    font-family: 'Arial';  
+}  
+
+.sprint{ 
+        width: 382px;  
+        overflow: hidden;  
+        margin: auto;  
+        margin: 20 0 0 450px;  
+        padding: 80px;  
+        /* background: #f6caef;    */
+        border-radius: 15px ; 
+        opacity: 0.6; 
+          
+}  
+h2{  
+    text-align: center;  
+    color: #000000;  
+    /* padding: 20px;   */
+    font-family: 'Arizonia';font-size: 50px;
+}  
+label{  
+    color: #000000;  
+    font-size: 17px;  
+    opacity: 1; 
+}  
+#Hours{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+    opacity: 1; 
+}  
+#Minutes{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+    opacity: 1; 
+      
+}  
+
+#Seconds{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+    opacity: 1; 
+      
+}
+
+#sprintb{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 17px;  
+    padding-left: 7px;  
+    color: rgb(0, 0, 0);  
+  
+  
+}  
+ 
+
+span{  
+    color: white;  
+    font-size: 17px;  
+}  
+a{  
+    float: right;  
+    background-color: #fbd0f4;  
+} 
+
+.column1 {
+    float: left;
+    width: 50%;
+    /* text-align: center */
+  }
+
+  .column2 {
+    float: left;
+    width: 50%;
+    text-align: center;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+

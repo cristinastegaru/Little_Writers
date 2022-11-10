@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Arizonia');
+.topnav {
+    background-color: rgb(246, 197, 218);
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: rgb(233, 226, 149);
+    color: #ffffff;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: rgb(251, 166, 203);
+    color: #ffffff;
+  }
+
+  body  
+{  
+    margin: 0;  
+    padding: 0;  
+    background-image: url("clouds2.png");
+    background-size: cover;
+    background-color:#f7c9fbba;  
+    font-family: 'Arial';  
+    color:#fff;
+}
+
+ ul,li{
+  list-style:none;
+  /* display : inline-block; */
+  /* background-color: #f7c9fbba; */
+}
+ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+ul li a{
+  display : inline-block;
+  text-decoration:none;
+  color:#000;
+  background:#ffc;
+  display:block;
+  height:10em;
+  width:10em;
+  padding:1em;
+}
+ul li{
+  margin:1em;
+} 
+
+.column1 {
+  float: left;
+  width: 50%;
+}
+
+.column2 {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.cloud {
+  width: 350px; height: 120px;
+	background: #f2f9fe;
+	background: linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+	background: -webkit-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+	background: -moz-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+	background: -ms-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+	background: -o-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+	text-align: center;
+  color: rgb(237, 177, 225);
+  display: flex; justify-content: center;
+  font-family: 'Brush Script MT', cursive;
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	
+	position: relative;
+	margin: 120px auto 20px;
+}
+
+.cloud:after, .cloud:before {
+	content: '';
+	position: absolute;
+	background: #f2f9fe;
+	z-index: -1
+}
+
+.cloud:after {
+	width: 100px; height: 100px;
+	top: -50px; left: 50px;
+	
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+}
+
+.cloud:before {
+	width: 180px; height: 180px;
+	top: -90px; right: 50px;
+	border-radius: 200px;
+	-webkit-border-radius: 200px;
+	-moz-border-radius: 200px;
+}
+
+
+h2{  
+  text-align: center;  
+  color: #000000;  
+  /* padding: 20px;   */
+  font-family: 'Arizonia';font-size: 50px;
+} 
+
+
+
+
+  
+
+
